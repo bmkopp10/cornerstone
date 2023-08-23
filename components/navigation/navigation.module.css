@@ -1,0 +1,22 @@
+.navigationHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.navigationHeader > div {
+    align-self: center;
+}
+
+.navigationLink {
+    margin: 0 10px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navigationLink:hover {
+    text-decoration: none;
+}
