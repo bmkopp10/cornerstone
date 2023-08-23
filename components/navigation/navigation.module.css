@@ -5,7 +5,8 @@
     position: fixed;
     background-color: white;
     width: 100%;
-    border-bottom: 10px solid #416fbf;
+    border-bottom: 10px solid #a2ada3;
+    z-index: 1;
 }
 
 .navigationHeader > div {

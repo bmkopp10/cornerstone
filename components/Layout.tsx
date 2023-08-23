@@ -4,6 +4,7 @@ import styles from './layout.module.css'
 import { PropsWithChildren } from 'react'
 import NavigationHeader from './navigation/NavigationHeader'
 import Footer from './footer/Footer'
+import { Outlet } from 'react-router-dom'
 
 const name = '[Your Name]'
 export const siteTitle = 'Next.js Sample Website'
@@ -45,6 +46,8 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
       />
       <NavigationHeader height={navigationHeight} />
       <main style={{ paddingTop: navigationHeight }}>{children}</main>
+      {/* <Outlet /> */}
+
       <Footer />
     </div>
   )
