@@ -16,6 +16,13 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet" />
+
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -36,7 +43,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      <NavigationHeader height={navigationHeight}/>
+      <NavigationHeader height={navigationHeight} />
       <main style={{ paddingTop: navigationHeight }}>{children}</main>
       <Footer />
     </div>
